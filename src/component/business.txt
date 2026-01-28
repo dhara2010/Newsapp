@@ -1,0 +1,9 @@
+<Route path="/business"><New pageSize={6} country="us" category="business"/></Route>
+<Route path="/entertainment"><New pageSize={6} country="us" category="entertainment"/></Route>
+<Route path="/general"><New pageSize={6} country="us" category="general"/></Route>
+<Route path="/health"><New pageSize={6} country="us" category="health"/></Route>
+<Route path="/science"><New pageSize={6} country="us" category="science"/></Route>
+<Route path="/sports"><New pageSize={6} country="us" category="sports"/></Route>
+<Route path="/technology"><New pageSize={6} country="us" category="technology"/></Route>
+
+<Route path="/"><New pageSize={6} country="us" category="general"/></Route>
