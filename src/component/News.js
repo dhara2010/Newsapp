@@ -48,7 +48,7 @@ const News = (props) =>{
   const fetchMoreData = async() => {
   const nextPage = page + 1;
   setPage(nextPage);
-  const url = `https://newsapi.org/v2/top-headlines?country=${props.country}&category=${props.category}&apiKey=${process.env.REACT_APP_NEWS_API}&page=${nextPage}&pageSize=${props.pageSize}`;
+  const url = `https://newsapi.org/v2/top-headlines?country=${props.country}&category=${props.category}&apiKey=${props.apiKey}&page=${nextPage}&pageSize=${props.pageSize}`;
   let data = await fetch(url);
     let parseData = await data.json();
     setArticles(articles.concat(parseData.articles || []));
